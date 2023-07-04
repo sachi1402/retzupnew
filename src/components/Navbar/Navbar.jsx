@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./navbar.scss";
 import { BsSearch, BsFilterLeft } from "react-icons/bs";
 import { IoOptionsOutline } from "react-icons/io5";
-
+import CatagoryModel from "../CatogaryModel/CatagoryModel";
+import ModelFIlter from "../ModelFilter/ModelFIlter";
 const Navbar = () => {
   const [scrollClass, setScrollClass] = useState("");
-
+  const [openModel, setopenModel] = useState(false);
+  const [openModelFliter, setopenModelFliter] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY || window.pageYOffset;
@@ -43,11 +45,11 @@ const Navbar = () => {
             </button>
             {/* </div> */}
           </div>}
-          { scrollClass!== "" &&<div className="Nav-filter-container">
-            <button className="Nav-filter-tool">
+          { scrollClass!== "" &&<div className="Nav-filter-container" >
+            <button className="Nav-filter-tool" onClick={()=>{setopenModelFliter(true)}}>
               <IoOptionsOutline />
             </button>
-            <button className="Nav-filter-Careers">Careers</button>|
+            <button className="Nav-filter-Careers" onClick={()=>setopenModel(true)}>Careers</button>|
             <h2 className="Nav-profile-title">
                 <span>Reztup</span> Your Home
               </h2>
@@ -72,6 +74,8 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <CatagoryModel open={openModel}  onClose={()=>setopenModel(false)}/>
+      <ModelFIlter open={openModelFliter} onClose={()=>setopenModelFliter(false)}/>
     </>
   );
 };

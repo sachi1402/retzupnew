@@ -1,0 +1,47 @@
+.property-Sleep-com{
+    display: flex;
+    flex-direction: column;
+    margin-top: 22.5px;
+    border-bottom: 1px solid #99999948;
+}
+.property-Sleep-com>h4{
+    color: #100501;
+font-size: 24px;
+font-family: DM Sans;
+font-weight: 700;
+margin: 0;
+}
+.property-Sleep-cont{
+    display: grid;
+    padding:  26px;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns in each row */
+  grid-gap: 20px ; /* Gap between grid items */
+  
+  
+}
+.property-Sleep-card{
+    border-radius: 5px;
+border: 0.5px solid #676767;
+background: #FFF;
+padding: 12px 30px;
+max-width: 167px;
+margin: 0;
+
+}
+.property-Sleep-card>h3{
+    color: #F1450E;
+text-align: center;
+font-size: 19px;
+font-family: DM Sans;
+font-weight: 500;
+margin: 0;
+}
+.property-Sleep-card>p{
+    color: #242424;
+text-align: center;
+font-size: 16px;
+font-family: DM Sans;
+font-weight: 500;
+margin: 0;
+
+}

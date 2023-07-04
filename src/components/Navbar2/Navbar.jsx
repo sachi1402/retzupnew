@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./navbar.scss";
+import "./navbar2.scss";
 import { BsSearch, BsFilterLeft } from "react-icons/bs";
 import { IoOptionsOutline } from "react-icons/io5";
 
@@ -27,8 +27,8 @@ const Navbar = () => {
   }, []);
   return (
     <>
-      <nav className={`row d-flex  my-component ` }>
-        <div id="wrappedNav">
+      <nav className={`row d-flex  my-component ` } style={{backgroundColor:'#fff'}}>
+        <div id="wrappedNav2" style={{backgroundColor:'#fff'}}>
           {/* <img src="logo.png" alt="" /> */}
           <h1 className="nav-logo" >Reztup</h1>
           <div className=" d-flex">
@@ -72,6 +72,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      
     </>
   );
 };

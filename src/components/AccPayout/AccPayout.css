@@ -1,0 +1,95 @@
+.AccPayout{
+    display: flex;
+    flex-direction: column;
+    
+}
+.AccPayout-title{
+    display: flex;
+    color: #000;
+    font-size: 24px;
+    font-family: DM Sans;
+    font-weight: 500;
+    line-height: 19px;
+    align-items: center;
+}
+.AccPayout-title>svg{
+    margin-right: 24px;
+}
+.Acc-pay-slicer{
+    color: #222;
+font-size: 16px;
+font-family: DM Sans;
+font-weight: 700;
+line-height: 22px;
+border-bottom: 1px solid #9999993c;
+display: flex;
+flex-direction: column;
+margin-top: 30px;
+}
+.Acc-pay-slicer-txt{
+    display: flex;
+    gap: 40px;
+    padding-bottom: 9px;
+}
+.Acc-pay-slicer>div>p{
+    margin: 0;
+    color: #222;
+font-size: 16px;
+font-family: DM Sans;
+font-weight: 700;
+line-height: 22px;
+}
+.orange-bar{
+    align-self: flex-start;
+    width:84px;
+    height: 4px;
+    background-color: #F1450E;
+    border-radius: 4px 4px 0 0;
+    /* margin-bottom:2px; */
+}
+.orange-bar-selected{
+    margin-left: 105px;
+    
+}
+.Acc-pay-row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    margin-top: 40px;
+    border-bottom: 1px solid #9999993c;
+    padding-bottom: 20px;
+}
+.Acc-pay-row1>div{
+    display: flex;
+    flex-direction: column;
+}
+.Acc-pay-row1>div>h4{
+    color: #000;
+font-size: 20px;
+font-family: DM Sans;
+font-weight: 500;
+line-height: 19px;
+margin: 0;
+}
+.Acc-pay-row1>div{
+    color: #5A5A5A;
+font-size: 14px;
+font-family: DM Sans;
+margin: 0;
+}
+.Acc-pay-row1>div>p{
+    margin-top:20px;
+}
+.Acc-pay-row1>button{
+    color: #FFF;
+font-size: 16px;
+font-family: DM Sans;
+font-weight: 500;
+line-height: 19px;border-radius: 4px;
+background: #F1450E;
+border: none;
+padding: 9px 32px;
+align-self: flex-start;
+}

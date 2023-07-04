@@ -5,6 +5,10 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    border-radius: 5px;
+border: 1px solid #F1450E;
+background: #FFF;
+box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.25);
   }
   
   .review-card-body {
@@ -41,4 +45,13 @@
     font-size: 18px;
     margin-right: 2px;
   }
+  .shoall{
+    color: #000;
+    font-size: 18px;
+    font-family: DM Sans;
+    text-decoration-line: underline;  
+    margin-left: -180px;
+    line-height: 50px;
+  }
+
   

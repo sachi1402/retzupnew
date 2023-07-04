@@ -1,0 +1,127 @@
+p{
+    padding:0;
+    margin:0;
+}
+h4{
+    margin: 0;
+    padding: 0;
+}
+.AccDeactivate{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+.AccDeactivate>h4{
+    color: #161616;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 48px;
+    margin-bottom: 24px;
+}
+.deactivste-btn-cont{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom:32px;
+}
+.deactivste-btn-cont>p{
+    color: #161616;
+font-size: 16px;
+font-family: DM Sans;
+line-height: 19px;
+}
+.deactivste-btn-cont>span{
+    color: #F1450E;
+font-size: 16px;
+font-family: DM Sans;
+font-weight: 500;
+line-height: 19px;
+}
+
+.Acc-deactivate-options{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.Acc-deactivate-options-row{
+    display: flex;
+    justify-content:space-between;
+}
+.Acc-deactivate-options-row>p{
+    color: #898989;
+font-size: 16px;
+font-family: DM Sans;
+line-height: 19px;
+}
+.Acc-deactivate-options-row input[type="radio"] {
+    display: none;
+  }
+  
+  .Acc-deactivate-options-row label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: #D9D9D9;
+    cursor: pointer;
+    margin-right:50px ;
+  }
+  
+  .Acc-deactivate-options-row input[type="radio"]:checked + label {
+    background: #F1450E;
+  }
+.Acc-deactivate-options-row>.Acc-deactivate-continue{
+    color: #FFF;
+font-size: 14px;
+font-family: DM Sans;
+font-weight: 500;
+line-height: 19px;
+border-radius: 5px;
+background: #F1450E;
+padding: 11px 22px;
+border: none;
+}
+
+
+.Acc-deactivate-deleteAcc{
+    display: flex;
+    flex-direction: column;
+}
+.Acc-deactivate-deleteAcc>h6{
+    color: #161616;
+font-size: 16px;
+font-family: DM Sans;
+line-height: 19px;
+}
+.Acc-deactivate-last-row{
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-between;
+}
+.Acc-deactivate-last-row>div{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+}
+.Acc-deactivate-last-row>div>p{
+    color: #888;
+font-size: 16px;
+font-family: DM Sans;
+line-height: 19px;
+}
+.Acc-deactivate-last-row>button{
+    border-radius: 5px;
+background: #F1450E;
+color: #FFF;
+font-size: 14px;
+font-family: DM Sans;
+font-weight: 500;
+line-height: 19px;
+padding: 10px 22px;
+border: none;
+align-self: flex-end;
+}
