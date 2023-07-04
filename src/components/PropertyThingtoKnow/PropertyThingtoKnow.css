@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+.property-things-comp{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border-bottom: 1px solid #99999978;
+    padding-bottom: 30px;
+}
+.property-thing-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.property-thing-title>h4{
+    margin:0;
+    color: #100501;
+    font-size: 24px;
+    font-family: DM Sans;
+    font-weight: 700;
+}
+.property-thing-title>img{
+
+}
+.property-thing-desc{
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+.property-thing-desc-l{
+    display: flex;
+    flex-direction: column;
+
+    /* flex-grow: 1; */
+}
+.property-thing-desc-l-row-1{
+    display: flex;
+    
+}
+.property-thing-desc-l-row-1>img{
+    width: 56px;
+    height: 56px;
+    border-radius:70%;
+}
+.property-thing-desc-l-row-1>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:12px ;
+}
+.property-thing-desc-l-row-1>div>h4{
+    margin:0;
+    color: #000;
+font-size: 20px;
+font-family: DM Sans;
+font-weight: 700;
+}
+.property-thing-desc-l-row-1>div>p{
+    margin:0;
+    color: #575757;
+font-size: 14px;
+font-family: DM Sans;
+}
+.property-thing-desc-l-row-2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 29px;
+
+}
+.property-thing-desc-l-r2-cont{
+    display: flex;
+}
+.property-thing-desc-l-r2-cont>span{
+    color: #000;
+    font-size: 16px;
+    font-family: DM Sans;
+    font-weight: 500;
+}
+.property-thing-desc-l-row-2>p{
+    color: #000;
+    font-size: 16px;
+    font-family: DM Sans;
+    max-width: 420px;
+}
+.property-thing-desc-l-row-2>h4{
+    margin:0;
+    color: #000;
+font-size: 18px;
+font-family: DM Sans;
+font-weight: 500;
+}
+.property-thing-desc-r{
+/* display: flex; */
+/* flex-direction: column; */
+}
+.property-thing-desc-r>button{
+
+    padding: 13px 24px;
+    border-radius: 8px;
+background: #F1450E;
+color: #FFF;
+font-size: 16px;
+font-family: DM Sans;
+font-weight: 700;
+border: none;
+}
+.property-thing-desc-r>div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 29px;
+    justify-content: flex-start;
+
+}
+.property-thing-desc-r>div>p{
+    color: #000;
+font-size: 16px;
+font-family: DM Sans;
+}

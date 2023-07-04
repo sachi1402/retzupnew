@@ -1,0 +1,90 @@
+
+.AccLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.AccLogin>h1{
+    margin: 0;
+    color: #000;
+    font-size: 24px;
+    font-family: DM Sans;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+}
+.AccLogin>svg{
+    margin-right: 20px;
+}
+.Login-row{
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+}
+.Login-sec-card>h3{
+    /* background-color: red; */
+    padding-top:0px;
+    margin-top: 0px;
+    color: #000;
+    font-size: 24px;
+    font-family: DM Sans;
+    font-weight: 500;
+    line-height: 19px;
+    margin-bottom: 24px;
+}
+.Login-sec-card{
+    display: flex;
+    flex-direction:column;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    border-bottom: 1px solid #99999965;
+    /* justify-content:space-between; */
+    /* align-items:center; */
+}
+.Login-sec-card>h4{
+    margin: 0;
+    color: #000;
+    font-size: 24px;
+    font-family: DM Sans;
+    font-weight: 500;
+    line-height: 19px;
+}
+.Login-sec-card>div{
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+.Login-sec-card>div>h6{
+    margin:0;
+    color: #000;
+    font-size: 16px;
+    font-family: DM Sans;
+    font-weight: 500;
+    line-height: 19px;
+}
+.subtitlecom{
+    display: flex;
+    flex-direction: column;
+}
+.subtitlecom>h4{
+    margin: 0;
+    color: #000;
+font-size: 16px;
+font-family: DM Sans;
+font-weight: 500;
+line-height: 19px;
+
+}
+.subtitlecom{
+
+}
+.subtitlecom>p{
+    color: #5A5A5A;
+font-size: 14px;
+font-family: DM Sans;
+margin: 0;
+padding-top: 8px;
+
+
+}

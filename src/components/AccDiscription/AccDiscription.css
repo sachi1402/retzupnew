@@ -1,0 +1,38 @@
+.AccDescription-container{
+    display: flex;
+    flex-direction: column;
+}
+.AccDescription-top{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    /* background-color: red; */
+    border-top: 0px;
+    
+}
+#AccDescription-title1{
+    color: #000;
+    font-size: 24px;
+    font-family: DM Sans;
+    font-weight: 500;
+    line-height: 19px;
+}
+#AccDescription-desc1{
+    color: #000;
+    font-size: 14px;
+    font-family: DM Sans;
+    font-weight: 500;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+}
+.AccDescription-btm{
+    display: flex;
+    flex-direction: column;
+}
+.AccDescription-line{
+    height:1px;
+    width:100%;
+    margin-bottom: 20px;
+    background-color: #99999982;
+}

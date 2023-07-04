@@ -1,0 +1,376 @@
+.started_retzup{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    justify-content: center;
+    align-items:center;
+}
+.started_retzup>h1{
+    color: #000;
+text-align: center;
+font-size: 32px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+line-height: 48px;
+max-width: 390px;
+}
+.step_cont{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.step_cont>div{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+.step-step-count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(178, 178, 178, 0.25);
+}
+
+.step_cont>div>h2{
+    color: #000;
+font-size: 24px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 45px;
+}
+.step-step-count-disc{
+    color: #000;
+font-size: 16px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.stated-step-btn-cont{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    align-self: center;
+    justify-self:flex-end;
+}
+.stated-step-btn-cont>p{
+    color: #000;
+font-size: 20px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.stated-step-btn-cont>button{
+    border-radius: 8px;
+background: #F1450E;
+border: none;
+padding:12px 72px;
+color: #FFF;
+font-size: 20px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.step_count{
+    color: #000;
+font-size: 20px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.step_count>b{
+    color:#F1450E;
+    font-weight: 400px;
+}
+.step-1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.step-1>h1{
+    color: #000;
+text-align: center;
+font-size: 32px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+.step-1>h1>span{
+    color: #000;
+text-align: center;
+font-size: 14px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.step-1>p{
+    color: #000;
+text-align: center;
+font-size: 16px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+max-width: 500px;
+}
+
+
+.step-2-card-cont{
+    display: flex;
+    gap:25px;
+    margin-bottom: 100px;
+
+}
+.step-2-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    padding:25px;
+    gap: 15px;
+    border-radius: 16px;
+border: 1px solid #D2D2D2;
+background: #FFF;
+}
+.step-2-card>h3{
+    color: #000;
+text-align: center;
+font-size: 20px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.step-2-card>p{
+    color: var(--5-a-5-a-5-a, #5A5A5A);
+text-align: center;
+font-size: 16px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+.step-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.step-3>h1{
+    color: #000;
+font-size: 32px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.step-3>p{
+    color: #000;
+font-size: 16px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 600px;
+text-align: center;
+}
+.step-3-search-cont{
+    display: flex;
+    padding:13px 20px;
+    gap: 16px;
+    height: 48px;
+
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+max-width: 450px;
+}
+.step-3-search-input{
+    border: none;
+    color: #000;
+font-size: 16px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+flex-grow: 1;
+height: 100%;
+}
+
+.step-3>iframe{
+    border-radius: 8px;
+background: #D9D9D9;
+height: 333px;
+width:450px ;
+margin-bottom: 40px ;
+}
+
+
+.step-4-form-cont{
+    height:500px;   
+    display: flex;
+    overflow-y: scroll;
+    margin-bottom:30px ;
+}
+.step-4-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 560px;
+    gap: 30px;
+    margin-top: 30px;
+}
+.step-4-form>fieldset{
+    border-radius: 8px;
+border: 1px solid var(--gray-secondary, #999);
+background: #FFF;
+width: 100%;
+padding: 16px 32px;
+}
+.step-4-form>fieldset>legend{
+    color: #999;
+font-size: 12px;
+font-family: Inter;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: -25px;
+background-color: #fff;
+width: fit-content;
+
+}
+.step-4-form>fieldset>input{
+    border: none;
+}
+.step-4-form-map-cont{
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.step-4-form-map-cont>h1{
+    color: #000;
+text-align: center;
+font-size: 20px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+
+}
+.step-4-form-map-cont>p{
+    color: #000;
+text-align: center;
+font-size: 16px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.step-4-form-map-cont>iframe{
+    border-radius: 8px;
+background: #D9D9D9;
+height: 333px;
+min-width: 450px;
+}
+
+.step-5-map-cont{
+    margin-bottom:  20px;
+
+}
+
+.step-5-map-cont>iframe{
+    border-radius: 8px;
+background: #D9D9D9;
+max-width: 451px;
+min-height: 333.637px;
+flex-shrink: 0;
+}
+
+
+.step-6-form-cont{
+    display: flex;
+    flex-direction: column;
+    
+}
+.step-6-form-cont>form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+.step-6-input-cont{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    gap: 300px  ;
+
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(191, 191, 191, 0.25);
+padding:10px 33px;
+    
+}
+.step-6-input-cont>p{
+    color: #000;
+font-size: 18px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 400;
+line-height: normal;    
+}
+.step-6-input-cont>div{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content:center;
+    gap: 20px   ;
+}
+.step-6-input-cont>div>h1{
+    color: #000;
+    font-size: 30px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;   
+}
+.step-6-input-cont>div>h2{
+    color: #000;
+font-size: 20px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

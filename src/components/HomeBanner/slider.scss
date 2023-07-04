@@ -1,3 +1,8 @@
+#carouselExampleCaptions{
+    position: absolute; 
+    top: 50;
+    left: 0;
+}
 .carousel-item {
     
     img {
@@ -9,4 +14,13 @@
 #carouselExampleCaptions{
     position: relative;
     top: -45px;
+}
+.carousel-indicators{
+    display:flex;
+}
+.carousel-control-prev-icon{
+   margin-top:40vh;
+}
+.carousel-control-next-icon{
+    margin-top:40vh;
 }

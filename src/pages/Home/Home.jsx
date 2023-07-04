@@ -14,6 +14,7 @@ import img1 from './../../../public/temp propertimg/l1.png'
 import img2 from './../../../public/temp propertimg/l2.png'
 import img3 from './../../../public/temp propertimg/l3.png'
 import img4 from './../../../public/temp propertimg/l4.png'
+import CatagoryModel from "../../components/CatogaryModel/CatagoryModel";
 
 const Home = () => {
   const authState = useSelector((state) => state.auth);
@@ -101,20 +102,22 @@ const Home = () => {
 
   return (
     <>
-    <div>
+    <div  className="home_main">
       
       <Navbar />
+    </div >
+    {/* <div style={{height:"3vw"}}></div> */}
+      {/* <div className=" container w-100    "> */}
       <Slider />
-    </div>
-    <div style={{height:"3vw"}}></div>
-      <div className=" container w-100    ">
-      <div >
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4  gap-3 justify-content-center w-100">
+      <div  >
+        <div className="home-card-container" id='homecardcont' >
         {/* {listingData && */}
           {rentals.map((e) => (
             <Card
               key={e.id}
-              img={e.image}
+              id={e.id}
+              // img={e.image}
+              img='https://picsum.photos/500/305'
               loc="New York, USA"
               orignalprice={600}
               rating={4.5}
@@ -130,8 +133,8 @@ const Home = () => {
         </div>
         
         
-      </div>
-      
+      {/* </div> */}
+      {/* <CatagoryModel/> */}
       <Footer/>
     </>
   );
