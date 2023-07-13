@@ -1,0 +1,37 @@
+.HomeFooter-cont{
+    display: flex;
+    padding: 17px 130px ;
+    background: #FFF;
+    box-shadow: 0px -1px 10px 0px rgba(150, 150, 150, 0.20), 0px 4px 4px 0px rgba(239, 239, 239, 0.32) inset;
+    gap: 120px;
+    align-items: center;
+    width: 100vw;
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 80%;
+    margin: 0 !important;
+    justify-content: center;
+
+    ul{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    p{
+        color: #000;
+font-family: Heebo;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+        
+        align-items: center;
+    }
+    div{
+    
+        display: flex;
+        gap: 24px;
+        align-items: center;
+    }
+}
