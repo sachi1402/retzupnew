@@ -16,6 +16,7 @@ import img3 from './../../../public/temp propertimg/l3.png'
 import img4 from './../../../public/temp propertimg/l4.png'
 import CatagoryModel from "../../components/CatogaryModel/CatagoryModel";
 import HomeCatbtn from "../../components/HomeCatBtn/HomeCatbtn";
+import HomeFooter from "../../components/HomeFooter/HomeFooter";
 
 const Home = () => {
   const authState = useSelector((state) => state.auth);
@@ -114,6 +115,7 @@ const Home = () => {
     {/* <div style={{height:"3vw"}}></div> */}
       {/* <div className=" container w-100    "> */}
       <Slider />
+      
       <div  >
         <div className="home-card-container" id='homecardcont' >
         {/* {listingData && */}
@@ -137,9 +139,11 @@ const Home = () => {
         </div>
         </div>
         
+        
         <HomeCatbtn/>
       {/* </div> */}
       {/* <CatagoryModel/> */}
+      <HomeFooter/>
       <Footer/>
     </>
   );
