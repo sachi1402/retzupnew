@@ -9,6 +9,7 @@ import AccAddPayment from "../pages/AccAddPayment/AccAddPayment";
 import Hoast from "../pages/HoastDetails/Hoast";
 import HostForm from "../pages/HostForm/HostForm";
 import HostFormStep2 from "../pages/HostForm/HostFormStep2/HostFormStep2";
+import HostFormStep3 from "../pages/HostForm/HostFormStep3/HostFormStep3";
 // import ReviewDetails from "../pages/test/ReviewDetails/ReviewDetils"
 const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
         {
           path: '/hodtregister2',
           element:<HostFormStep2/>
+        },
+        {
+          path: '/hodtregister3',
+          element:<HostFormStep3/>
         }
     
   // {

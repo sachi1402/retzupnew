@@ -15,6 +15,7 @@ import img2 from './../../../public/temp propertimg/l2.png'
 import img3 from './../../../public/temp propertimg/l3.png'
 import img4 from './../../../public/temp propertimg/l4.png'
 import CatagoryModel from "../../components/CatogaryModel/CatagoryModel";
+import HomeCatbtn from "../../components/HomeCatBtn/HomeCatbtn";
 
 const Home = () => {
   const authState = useSelector((state) => state.auth);
@@ -82,8 +83,13 @@ const Home = () => {
   }, []);
 
   const rentals = [
-    { title: "Cayucos, California, US", image: {img1}, price: "60,284" },
-    { title: "Texas, USA", image: "https://picsum.photos/500/302", price: "1,541" },
+    { title: "Cayucos, California, US", image: "https://picsum.photos/508/402", price: "60,284" },
+    { title: "Texas, USA", image: "https://picsum.photos/500/202", price: "1,541" },
+    { title: "Texas, USA", image: "https://picsum.photos/550/303", price: "1,541" },
+    { title: "Texas, USA", image: "https://picsum.photos/600/304", price: "1,541" },
+    { title: "Texas, USA", image: "https://picsum.photos/700/305", price: "1,541" },
+    { title: "Texas, USA", image: "https://picsum.photos/900/301", price: "1,541" },
+    { title: "Texas, USA", image: "https://picsum.photos/200/302", price: "1,541" },
     { title: "Texas, USA", image: "https://picsum.photos/500/303", price: "1,541" },
     { title: "Texas, USA", image: "https://picsum.photos/500/304", price: "1,541" },
     { title: "Texas, USA", image: "https://picsum.photos/500/305", price: "1,541" },
@@ -92,10 +98,9 @@ const Home = () => {
     { title: "Texas, USA", image: "https://picsum.photos/500/303", price: "1,541" },
     { title: "Texas, USA", image: "https://picsum.photos/500/304", price: "1,541" },
     { title: "Texas, USA", image: "https://picsum.photos/500/305", price: "1,541" },
-    { title: "Texas, USA", image: "https://picsum.photos/500/301", price: "1,541" },
-    { title: "Texas, USA", image: "https://picsum.photos/500/302", price: "1,541" },
-    { title: "Texas, USA", image: "https://picsum.photos/500/303", price: "1,541" },
-    { title: "Texas, USA", image: "https://picsum.photos/500/304", price: "1,541" },
+    { title: "Texas, USA", image: "https://picsum.photos/500/305", price: "1,541" },
+    { title: "Texas, USA", image: "https://picsum.photos/500/305", price: "1,541" },
+    { title: "Texas, USA", image: "https://picsum.photos/500/305", price: "1,541" },
     { title: "Texas, USA", image: "https://picsum.photos/500/305", price: "1,541" },
     { title: "Texas, USA", image: "https://picsum.photos/500/305", price: "1,541" },
   ];
@@ -116,8 +121,8 @@ const Home = () => {
             <Card
               key={e.id}
               id={e.id}
-              // img={e.image}
-              img='https://picsum.photos/500/305'
+              img={e.image} 
+              // img='https://picsum.photos/500/305'
               loc="New York, USA"
               orignalprice={600}
               rating={4.5}
@@ -132,7 +137,7 @@ const Home = () => {
         </div>
         </div>
         
-        
+        <HomeCatbtn/>
       {/* </div> */}
       {/* <CatagoryModel/> */}
       <Footer/>

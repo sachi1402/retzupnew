@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './HostFormStep2.css'
+import './HostFormStep3.css'
 import Navbar from '../../../components/Navbar2/Navbar';
 
 const HostFormStep3 = () => {
@@ -20,22 +20,25 @@ const HostFormStep3 = () => {
     return (
     <>
     <Navbar/>
-    <div className="step2" >
+    <div className="step3" >
       {(stepcount===1)&&<div className="step2-1">
-        <h1><span>Step-2</span>Tell us about your place</h1>
-        <p>In this step, you’ll add some of the amenities your place offers, plus 5 
-or more photos. Then you’ll create a title and description.</p>
+        <h1><span>Step-3</span> Finish up and publish</h1>
+        <p>Finally, you’ll choose if you'd like to start with an experienced guest, 
+then you'll set your nightly price. Answer a few quick questions 
+and publish when you're ready.</p>
 <img src=''/>
       </div>}
       {(stepcount===2)&&<div className="step2-1">
-        <h1>Which of these best describes your place?</h1>
-        <p>You can add more amenities after you publish your listing.</p>
-        <div className="step2-2-grid-cont">
-            {griditmstp2.map(e=><div className="step2-grid-item">{e}</div>)}
-        </div>
-        <h1>Do you have any more facilities?</h1>
-        <div className="step2-2-grid-cont">
-            {griditmstp2.map(e=><div className="step2-grid-item">{e}</div>)}
+        <h1>Choose who to welcome for your 
+first reservation</h1>
+        <p>After your first guest anyone can book your place. Learn more</p>
+        <div className="step3-2-flex-cont">
+            <div className="step3-2-card">
+              <h2>Any Reztup guest</h2>
+              <p>Get reservations faster when you
+welcome anyone from the 
+Reztup community.</p>
+            </div>
         </div>
         </div>}
         {(stepcount===3)&&<div className="step2-1">
@@ -53,7 +56,7 @@ or more photos. Then you’ll create a title and description.</p>
       )}
     </div>
             </div>}
-            {(stepcount===4)&&<div className="step2-1">
+            {(stepcount===4)&&  <div className="step2-1">
             <h1>Now, let’s give your house title</h1>
             <p>Short titles work best. Have fun with it - you can always change it later.</p>
             <textarea class="step2-4-input" 
@@ -97,4 +100,4 @@ or more photos. Then you’ll create a title and description.</p>
   )
 }
 
-export default HostFormStep2
+export default HostFormStep3

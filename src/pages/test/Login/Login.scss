@@ -307,3 +307,115 @@
 #dob {
   margin: 0 !important;
 }
+
+
+@media screen and (max-width: 1000px) {
+  .login-logo{
+    display: flex;
+    justify-self: center;
+    align-self: center !important;
+    font-size: 48px !important;
+    padding-left: 7% !important;
+    // width: 146px;
+      /* height: 47px; */
+      // margin: 0;
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 500;
+      // font-size: 2.8vw;
+      /* line-height: 47px; */
+      /* identical to box height */
+      margin: 0 25% 2vh 25% !important;
+      
+      display: flex;
+      align-items: center;
+      color: #f1450e;
+      
+  }
+  .login-title{
+    display: none !important; 
+  }
+  .Login-Right-cont {
+      margin: 0 !important;
+      // padding: 0 !important;
+      width:  80vw;
+
+      .input-cont  {
+        margin:0 !important;
+        padding: 0 !important;
+        width: 80vw;
+
+        .icon-cont   {
+            width: 100vw !important;
+        }
+      }  
+      
+      .login-form-input-cont {
+        padding: 20px 0 !important;
+        margin: 0 25% 0 25% 0  !important;
+        align-self: center !important;
+        justify-content: center !important;
+        margin-left: 19% !important;
+        margin-right: 8% !important;
+      }
+      .icon-cont  {
+        margin: 0vw 0 !important;
+        width: 100%;
+        // background: #f4f4f4;
+        margin-left: 5% !important;
+        div{
+        
+          // background-color: red !important;
+          width: 50px !important;
+          height: 50px !important;
+          img{
+            width: 40px !important;
+          }
+          svg{
+            width: 40px !important;
+            height: 40px !important;
+          }
+          }
+        
+      }
+      .EmailOrMobile{
+        
+        width: 100vw !important;
+        display: flex ;
+        margin: 0 !important;
+        padding: 0 !important;
+        align-items: center !important;
+        justify-content: space-around !important;
+        margin-left: 20% !important ;
+        margin-bottom: -5% !important;
+        margin-top: 5% !important; 
+        .emailtext{
+          margin:0 !important;
+        }
+        .MobleCont {
+          .pwdtext{
+            
+            margin: 0 !important;
+            h6{
+              border: none !important;
+              text-decoration: none  !important;
+            }
+          }
+          border: none !important;
+
+        }
+        .selected{
+          h6{
+          color: #f1450e !important;}
+        }
+      }
+  }
+
+  .Login-Left-img-cont{
+    display: none;
+
+    
+  }
+  
+  
+}
