@@ -1,6 +1,6 @@
 import React from 'react'
 import './PRcard.css'
-import star from './../../../assets/star.svg'
+// import star from './../../../assets/star.svg'
 const PRcard = () => {
   return (
     <div className="PRcard">
@@ -14,11 +14,11 @@ const PRcard = () => {
       <div className="PRcard-row2">
         <p>Had a good stay.</p>
             <div>
-            <img src={star} alt={'star'}/>
-            <img src={star} alt={'star'}/>
-            <img src={star} alt={'star'}/>
-            <img src={star} alt={'star'}/>
-            <img src={star} alt={'star'}/>
+            {/* <img src={star} alt={'star'}/> */}
+            {/* <img src={star} alt={'star'}/> */}
+            {/* <img src={star} alt={'star'}/> */}
+            {/* <img src={star} alt={'star'}/> */}
+            {/* <img src={star} alt={'star'}/> */}
             </div>
         
       </div>
