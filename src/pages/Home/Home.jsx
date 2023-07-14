@@ -18,6 +18,7 @@ import CatagoryModel from "../../components/CatogaryModel/CatagoryModel";
 import HomeCatbtn from "../../components/HomeCatBtn/HomeCatbtn";
 import HomeFooter from "../../components/HomeFooter/HomeFooter";
 import ModelFilter from "../../components/ModelFIlter/ModelFIlter"
+// s
 
 const Home = () => {
   const authState = useSelector((state) => state.auth);
