@@ -1,7 +1,7 @@
 import React ,{useState}from 'react'
 import ReactDom from 'react-dom'
 import './ModelFIlter.css'
-const ModelFIlter = ({open,onClose}) => {
+const ModelFilter = ({open,onClose}) => {
 
     const [min, setMin] = useState(10);
   const [max, setMax] = useState(100);
@@ -309,4 +309,4 @@ const ModelFIlter = ({open,onClose}) => {
   )
 }
 
-export default ModelFIlter
+export default ModelFilter

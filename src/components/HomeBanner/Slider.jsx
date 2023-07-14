@@ -1,83 +1,80 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "./slider.scss";
 
 const Slider = () => {
+
+
+  const [autoplay, setAutoplay] = useState(true);
+
+  useEffect(() => {
+    let intervalId = null;
+    if (autoplay) {
+      intervalId = setInterval(moveRight, 3000);
+    }
+    return () => clearInterval(intervalId);
+  }, [autoplay]);
+
+  const moveLeft = () => {
+    const sliderUl = document.querySelector('#slider ul');
+    const slideWidth = document.querySelector('#slider ul li').offsetWidth;
+
+    sliderUl.style.left = `${slideWidth}px`;
+    sliderUl.insertBefore(
+      sliderUl.lastChild,
+      sliderUl.firstChild
+    );
+
+    setTimeout(() => {
+      sliderUl.style.left = '';
+    }, 200);
+  };
+
+  const moveRight = () => {
+    const sliderUl = document.querySelector('#slider ul');
+    const slideWidth = document.querySelector('#slider ul li').offsetWidth;
+
+    sliderUl.style.left = `-${slideWidth}px`;
+    sliderUl.appendChild(
+      sliderUl.firstChild
+    );
+
+    setTimeout(() => {
+      sliderUl.style.left = '';
+    }, 0);
+  };
+
+  const handleCheckboxChange = () => {
+    setAutoplay(!autoplay);
+  };
   return (
-    <>
-      <div id="carouselExampleCaptions" className="carousel slide">
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          {/* <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> */}
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img
-              src="https://img.freepik.com/free-photo/beautiful-city-landscape-with-tall-buildings-high-angle_23-2149444885.jpg?w=2000"
-              className="d-block w-100"
-              alt="..."
-            />
-            <div className="carousel-caption d-none d-md-block">
-              <h5 className="fs-1">Book Top Hill Tent</h5>
-              <h5 className="fs-1">
-                Experiences Local things to do, wherever you are.
-              </h5>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://free4kwallpapers.com/uploads/originals/2019/12/14/empire-state-building-wallpaper.jpg"
-              className="d-block w-100"
-              alt="..."
-            />
-            <div className="carousel-caption d-none d-md-block">
-              <h5 className="fs-1">Second slide label</h5>
-              <h5 className="fs-1">
-                Some representative placeholder content for the second slide.
-              </h5>
-            </div>
-          </div>
-          {/* <div className="carousel-item">
-    <img src="https://img.freepik.com/free-photo/beautiful-city-landscape-with-tall-buildings-high-angle_23-2149444885.jpg?w=2000" className="d-block w-100" alt="..."/>
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
+      <div>
+    {/* <h1>Incredibly Basic Slider</h1> */}
+    <div id="slider">
+      <a href="#" className="control_next" onClick={moveRight}>
+        &gt;
+      </a>
+      <a href="#" className="control_prev" onClick={moveLeft}>
+        &lt;
+      </a>
+      <ul   >
+        <li style={{ backgroundImage: "url('https://source.unsplash.com/random/1920x1080?room')"}}>SLIDE 1</li>
+        <li style={{ backgroundImage: "url('https://source.unsplash.com/random/1920x1080?travel')"}}>SLIDE 2</li>
+        <li style={{ backgroundImage: "url('https://source.unsplash.com/random/1920x1080?home')"}}>SLIDE 3</li>
+        <li style={{ backgroundImage: "url('https://source.unsplash.com/random/1920x1080?plane')"}}>SLIDE 4</li>
+      </ul>
+    </div>
+
+    {/* <div className="slider_option">
+      <input
+        type="checkbox"
+        id="checkbox"
+        checked={autoplay}
+        onChange={handleCheckboxChange}
+      />
+      <label htmlFor="checkbox">Autoplay Slider</label>
     </div> */}
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
-    </>
-  );
+  </div>
+  )
 };
 
 export default Slider;

@@ -17,11 +17,13 @@ import img4 from './../../../public/temp propertimg/l4.png'
 import CatagoryModel from "../../components/CatogaryModel/CatagoryModel";
 import HomeCatbtn from "../../components/HomeCatBtn/HomeCatbtn";
 import HomeFooter from "../../components/HomeFooter/HomeFooter";
+import ModelFilter from "../../components/ModelFIlter/ModelFIlter"
 
 const Home = () => {
   const authState = useSelector((state) => state.auth);
   console.log("Authentication State:", authState);
-
+  const [openMOdel, setopenMOdel] = useState(false); 
+  const [openFilter, setopenFilter] = useState(false); 
   const [listingData, setListingData] = useState([]);
   const Navigate = useNavigate();
   useEffect(() => {
@@ -110,7 +112,7 @@ const Home = () => {
     <>
     <div  className="home_main">
       
-      <Navbar />
+      <Navbar openfilters={()=>setOpenFilter(e=>!e)} />
     </div >
     {/* <div style={{height:"3vw"}}></div> */}
       {/* <div className=" container w-100    "> */}
@@ -140,11 +142,12 @@ const Home = () => {
         </div>
         
         
-        <HomeCatbtn/>
+        <HomeCatbtn clicked={()=>setopenMOdel(e=>!e)}/>
       {/* </div> */}
-      {/* <CatagoryModel/> */}
+      <CatagoryModel open={openMOdel} onClose={()=>setopenMOdel(e=>!e)}/>
       <HomeFooter/>
-      <Footer/>
+      {openFilter&&<ModelFilter open={openFilter} onClose={()=>setopenFilter(e=>!e)}/>}
+      {/* <Footer/> */}
     </>
   );
 };

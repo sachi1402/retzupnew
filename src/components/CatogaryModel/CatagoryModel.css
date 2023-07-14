@@ -89,3 +89,24 @@ align-self: center;
     background-color: #F1450E;
     border-radius: 0.5px;
 }
+
+@media screen and (max-width:750px){
+    .CatogaryModel-grid{
+        display: grid;
+        padding:36px;
+        grid-template-columns: repeat(3, 2fr); /* 5 items per row */
+        /* grid-template-rows: repeat(3, 1fr); */
+        gap: 35px;
+    }
+    
+    .CatogaryModel-grid-itm>h3{
+        color: #100501;
+        text-align: center;
+        font-size: 12px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        width:20vw;
+    }
+}

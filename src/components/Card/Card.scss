@@ -9,12 +9,12 @@
 .card-img{
   width: inherit;
   object-fit: cover;
-  height: 20vw;
+  height: 15vw;
   border-radius:15px ;
 }
 .card-title-txt{
   color: #222;
-font-size: 1.5em;
+font-size: 19px;
 font-family: Open Sans;
 font-weight: 700;
 line-height: 19px;
@@ -26,7 +26,7 @@ line-height: 19px;
 }
 .card-loc{
   color: #505050;
-  font-size: 1em;
+  font-size: 15px;
   font-family: Roboto;
   line-height: 19px;
   margin: 0;
@@ -36,7 +36,7 @@ line-height: 19px;
 }
 .card-disc-prce{
 color: #E90303;
-font-size: 1.2em;
+font-size: 15px;
 font-family: Roboto;
 line-height: 19px;
 text-decoration-line: line-through;
@@ -99,7 +99,7 @@ line-height: 19px;
     height: 300px;
   }
   
-}
+} 
 
 @media  (max-width: 900px){
   .card-img{

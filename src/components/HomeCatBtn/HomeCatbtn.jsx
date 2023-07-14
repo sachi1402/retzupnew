@@ -1,10 +1,10 @@
 import React from 'react'
 import './HomeCatbtn.scss'
 import { Link } from 'react-router-dom'
-const HomeCatbtn = () => {
+const HomeCatbtn = ({clicked}) => {
   return (
     
-    <button className="Catogary-btn">
+    <button className="Catogary-btn" onClick={clicked}>
         Category
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" fill="none">
 <rect x="-6" y="-6" width="31" height="31" fill="url(#pattern0)"/>

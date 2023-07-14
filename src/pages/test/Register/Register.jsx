@@ -3,9 +3,20 @@ import React, { useState } from "react";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import logo from "../../Assets/Images/logo.png";
 // import banner from "../../Assets/Images/login.png";
-import './../Login/Login'
+// import './../Login/Login'
+import './LoginR.scss'
 import { useNavigate } from "react-router-dom";
-import { FaApple, FaEnvelope } from "react-icons/fa";
+
+
+
+// import {  AiFillApple, AiFillGoogle } from 'react-icons/ai';
+// import { IoMdMail, IoIosCall } from 'react-icons/io';
+
+import { BsApple } from 'react-icons/bs';
+import { SiFacebook } from 'react-icons/si';
+import { FcGoogle } from "react-icons/fc";
+import { FaGoogle, FaApple, FaFacebook, FaEnvelope ,FaPhone} from 'react-icons/fa';
+// import { FaApple, FaEnvelope } from "react-icons/fa";
 const Register = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -49,125 +60,45 @@ const Register = () => {
         console.error("Error:", error);
       });
   };
-
+const [selectedMethod, setselectedMethod] = useState('email');
   return (
-    <div>
-    <section className="vh-100 d-flex">
-      <div className="container-fluid">
-        <div className="row">
-          <div id="leftcompo" className="col-sm-6 text-black">
-            <div className="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-xl-0 mt-xl-n5">
-              <form onSubmit={handleSubmit}>
-                <img id="topLogo" src={'/google icon.png'} alt="" />
-                <h3 className="fw-normal mb-3 pb-3">Create an account</h3>
-                <p>Let's get started with your journey</p>
-                <div className="row">
-                  <div className="col-sm-6">
-                    <div className="form-outline mb-4">
-                      <input
-                        type="text"
-                        id="firstName"
-                        className="form-control form-control-lg"
-                        placeholder="First Name"
-                        value={firstName}
-                        onChange={(e) => setFirstName(e.target.value)}
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="col-sm-6">
-                    <div className="form-outline mb-4">
-                      <input
-                        type="text"
-                        id="lastName"
-                        className="form-control form-control-lg"
-                        placeholder="Last Name"
-                        value={lastName}
-                        onChange={(e) => setLastName(e.target.value)}
-                        required
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div  className="form-outline mb-4">
-                  <input 
-                    type="date"
-                    id="dob"
-                    className="form-control form-control-lg"
-                    placeholder="Date of Birth"
-                    value={dob}
-                    onChange={(e) => setDob(e.target.value)}
-                    required
-                  />
-                </div>
-                <div className="form-outline mb-4">
-                  <input
-                    type="email"
-                    id="email"
-                    className="form-control form-control-lg"
-                    placeholder="Email Address"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                  />
-                </div>
-                <div className="form-outline mb-4">
-                  <input
-                    type="tel"
-                    id="mobileNumber"
-                    className="form-control form-control-lg"
-                    placeholder="Mobile Number"
-                    value={mobileNumber}
-                    onChange={(e) => setMobileNumber(e.target.value)}
-                    required
-                  />
-                </div>
-                <div className="form-outline mb-4">
-                  <input
-                    type="password"
-                    id="password"
-                    className="form-control form-control-lg"
-                    placeholder="Password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                  />
-                </div>
-                <div className="pt-1 mb-3">
-                <button style={{ width: '100%', background: '#F1450E', color: '#fff' }} className="Login-btn" type="submit">
-                    Sign-Up
-                  </button>
-                </div>
-                <div className='orline'>or</div>
-
-                <div className="icon-cont" style={{width:"100%"}}>
-                  <div>
-                    <img src="/google icon.png" alt="" />
-                  </div>
-                  <div>
-                    <FaApple />
-                  </div>
-                  <div>
-                    <img src="/facebook icon.png" alt="" />
-                  </div>
-                  <div>
-                    <FaEnvelope />
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div className="input-cont"></div>
-
-          <div
-            style={{ background: "#F1450E" }}
-            className="Login-Left-img-cont"
-          >
-            <img src={'https://wallpaperaccess.com/full/2690549.jpg'} alt="Banner image" className="w-100 vh-100" />
-          </div>
+    <div className="Signup-main">
+      <div className="Signup-l">
+        <h1 className="Signup-logo-m">Retzup</h1>
+        <div className="Signup-l-main-cont">
+          <h1>Sign up to Reztup</h1>
+          
+        <p className='or-2-Signup'></p>
+        <div className='Signup-form'>
+         {(selectedMethod==="email" )?<>
+        <input type="email"  placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
+        <input type="email"  placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
+        <input type="email"  placeholder="Date of birth" value={dob} onChange={(e) => setDob(e.target.value)} />
+        <input type="email"  placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <input type="email"  placeholder="Phone No"  value={mobileNumber} onChange={(e) => setMobileNumber(e.target.value)} />
+        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        </>: <input type="number"  placeholder="Phone Number" value={email} onChange={(e) => setEmail(e.target.value)} />
+}
+        <button  className="Signup-btn" onSubmit={handleSubmit}>Sign Up</button>
         </div>
+        <p>or</p>
+          <div className="Signup-icon-cont">
+            <FaPhone className={(selectedMethod==="mobile")?"Signup-icon-select":"Signup-icon"}   onClick={()=>setSelectedMethod("mobile")}/>
+            <BsApple className='Signup-icon'/>
+            <FcGoogle className='Signup-icon'/>
+            <FaFacebook className='Signup-icon'/>
+            <FaEnvelope className={(selectedMethod==="email")?"Signup-icon-select":"Signup-icon"} onClick={()=>setSelectedMethod("email")}/>
+            
+          </div>
+      <button className='Signup-signup'>Create Account</button>
       </div>
-    </section>
+      </div>
+      <div className="Signup-r">
+      <h1>Log In ?</h1>
+      <p>Alrady have an Account</p>
+      <button onClick={() => navigate('/')}>Login to account</button>
+      </div>
+
     </div>
   );
 };

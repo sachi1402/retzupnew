@@ -9,7 +9,7 @@
     position:fixed;
     left: 0;
     right: 0;
-    top: 80%;
+    top: 90%;
     margin: 0 !important;
     justify-content: center;
 
@@ -34,4 +34,12 @@ line-height: normal;
         gap: 24px;
         align-items: center;
     }
+}
+
+@media screen and (max-width: 900px) {
+    .HomeFooter-cont{
+        display: none;
+
+    }
+    
 }

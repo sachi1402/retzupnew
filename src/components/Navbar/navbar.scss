@@ -137,6 +137,7 @@
 }
 @media screen  and (max-width: 1350px){
   .nav-mobile-cont{
+    margin-left:0 !important;
     display: none;
   }
   .nav-mobile{
@@ -144,6 +145,7 @@
   }
   .navbar-accoutn-cont{
     display: flex;
+    margin-top: 0 !important;
     .navbar-acc-btn{
       display: none;
 
@@ -167,6 +169,8 @@
     display: flex;
     width: 100vw;
     position: fixed;
+    top :0;
+    
     justify-content: center;
     align-items: center;
     z-index: 99999;
@@ -194,6 +198,7 @@
       margin-left: 13px;
     }
     .nav-mobile-center{
+      margin-left:0 !important;
       display: flex;
       flex-direction: column;
       align-items: center;

@@ -90,7 +90,7 @@
 import React, { useEffect, useState } from 'react';
 import './navbar.scss'
 
-function Navbar() {
+function Navbar({openfilters}) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -128,7 +128,7 @@ function Navbar() {
 </svg>
           
         </div>
-        <div className="navbar-search-filter-btn">
+        <div className="navbar-search-filter-btn" onClick={openfilters}>
         {/* <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16" fill="none">
 <rect x="0.000244141" width="16" height="16" fill="url(#pattern0)"/>
 <defs>
