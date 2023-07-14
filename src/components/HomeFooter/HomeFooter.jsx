@@ -11,6 +11,7 @@ const HomeFooter = () => {
         <li>Terms</li>
         <li>Company Details </li>
         <li>Support</li>
+        {/* jj */}
       </ul>
       <p>
         <svg
