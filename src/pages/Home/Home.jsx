@@ -17,7 +17,8 @@ import img4 from './../../../public/temp propertimg/l4.png'
 import CatagoryModel from "../../components/CatogaryModel/CatagoryModel";
 import HomeCatbtn from "../../components/HomeCatBtn/HomeCatbtn";
 import HomeFooter from "../../components/HomeFooter/HomeFooter";
-import ModelFilter from "../../components/ModelFIlter/ModelFIlter"
+// import FilterModel from "../../components/FilterModel/FilterModel";
+// import ModelFilter from "../../components/ModelFIlter/ModelFIlter"
 // s
 
 const Home = () => {
@@ -113,7 +114,7 @@ const Home = () => {
     <>
     <div  className="home_main">
       
-      <Navbar openfilters={()=>setOpenFilter(e=>!e)} />
+      <Navbar openfilters={()=>setOpenFilter(true)} />
     </div >
     {/* <div style={{height:"3vw"}}></div> */}
       {/* <div className=" container w-100    "> */}
@@ -147,7 +148,8 @@ const Home = () => {
       {/* </div> */}
       <CatagoryModel open={openMOdel} onClose={()=>setopenMOdel(e=>!e)}/>
       <HomeFooter/>
-      {openFilter&&<ModelFilter open={openFilter} onClose={()=>setopenFilter(e=>!e)}/>}
+      {/* {openFilter&&<FilterModel open={openFilter} onClose={()=>setopenFilter(e=>!e)}/>} */}
+      {/* <FilterModel/> */}
       {/* <Footer/> */}
     </>
   );
