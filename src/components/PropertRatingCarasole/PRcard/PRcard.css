@@ -63,3 +63,49 @@ flex-shrink: 1;
     width: 25px;
     height: 25px;
 }
+
+@media screen and (max-width:870px) {
+    
+    .PRcard-row1>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+    .PRcard-row1>div>h5{
+        color: #000;
+        font-size: 1em;
+        font-family: DM Sans;
+        font-weight: 700;
+        margin: 0;
+        padding:0;
+    }
+    .PRcard-row1>div>p{
+        color: #575757;
+        font-size: 1em;
+        font-family: DM Sans;
+        padding: 0;
+        margin: 0;
+        
+        
+    }
+
+    .PRcard-row2{
+        color: #575757;
+        font-size: 1em;
+        font-family: DM Sans;
+    }
+    .PRcard-row2>p{
+        margin-bottom:5px ;
+    }
+    .PRcard-row2>div{
+        display: flex;
+        gap:16px;
+        flex-grow: 1;
+    }
+    .PRcard-row2>div>img{
+        width: 25px;
+        height: 25px;
+    }
+}

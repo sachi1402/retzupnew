@@ -6,6 +6,7 @@
     margin-top: 30px;
     border-bottom: 1px solid #99999978;
     padding-bottom: 30px;
+    width: 70%;
 }
 .property-thing-title{
     display: flex;
@@ -117,3 +118,58 @@ border: none;
 font-size: 16px;
 font-family: DM Sans;
 }
+
+
+@media screen and (max-width: 870px) {
+    .property-things-comp{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        border-bottom: 1px solid #99999978;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+    .property-thing-title>h4{
+        margin:0;
+        color: #100501;
+        font-size: 1.3em;
+        font-family: DM Sans;
+        font-weight: 700;
+    }
+    .property-thing-desc{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 25px;
+        justify-content: space-between;
+    }
+    .property-thing-desc-l-row-1>div>h4{
+        margin:0;
+        color: #000;
+    font-size: 1.2em;
+    font-family: DM Sans;
+    font-weight: 700;
+    }
+    .property-thing-desc-l-row-1>div>p{
+        margin:0;
+        color: #575757;
+    font-size: 0.8em;
+    font-family: DM Sans;
+    }
+    .property-thing-desc-l-row-2>p{
+        color: #000;
+        font-size: 0.8em;
+        font-family: DM Sans;
+        max-width: 420px;
+    }
+    .property-thing-desc-l-row-2>div>h4{
+        font-size: 0.8em;
+        margin:10px 0px;
+    }
+    .property-thing-desc-r>div>p{
+        color: #000;
+    font-size: 0.8em;
+    font-family: DM Sans;
+    }
+}
+

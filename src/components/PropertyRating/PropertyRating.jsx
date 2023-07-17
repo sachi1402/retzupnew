@@ -1,6 +1,9 @@
 import React from 'react'
 import './PropertyRating.css'
 // import star from './Star.svg'
+import { AiOutlineStar, AiFillStar } from 'react-icons/ai';
+
+        
 const PropertyRating = () => {
   return (
     <div className='propertyRating'>
@@ -10,6 +13,13 @@ const PropertyRating = () => {
         <img src={star} alt={'star'}/>
         <img src={star} alt={'star'}/>
         <img src={star} alt={'star'}/> */}
+        <AiFillStar size={24} color="gold" />
+        <AiFillStar size={24} color="gold" />
+        <AiFillStar size={24} color="gold" />
+        <AiOutlineStar size={24} color="gold" />
+        
+
+
         </div>
         <p>Show all 47 Reviews</p>
       </div>

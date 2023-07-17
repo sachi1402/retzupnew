@@ -1,6 +1,9 @@
 import React from 'react'
 import './PRcard.css'
 // import star from './../../../assets/star.svg'
+import { AiOutlineStar, AiFillStar } from 'react-icons/ai';
+
+        
 const PRcard = () => {
   return (
     <div className="PRcard">
@@ -19,6 +22,11 @@ const PRcard = () => {
             {/* <img src={star} alt={'star'}/> */}
             {/* <img src={star} alt={'star'}/> */}
             {/* <img src={star} alt={'star'}/> */}
+            <AiFillStar size={24} color="gold" />
+            <AiFillStar size={24} color="gold" />
+            <AiFillStar size={24} color="gold" />
+            <AiFillStar size={24} color="gold" />
+        <AiOutlineStar size={24} color="gold" />
             </div>
         
       </div>

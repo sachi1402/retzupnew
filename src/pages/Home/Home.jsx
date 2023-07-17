@@ -114,7 +114,7 @@ const Home = () => {
     <>
     <div  className="home_main">
       
-      <Navbar openfilters={()=>setOpenFilter(true)} />
+      <Navbar openfilters={()=>setOpenFilter(true)}  showanim={true}/>
     </div >
     {/* <div style={{height:"3vw"}}></div> */}
       {/* <div className=" container w-100    "> */}

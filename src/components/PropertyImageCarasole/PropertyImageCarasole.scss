@@ -1,0 +1,98 @@
+.Property-Image-cont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    .Property-Image-cont-img{
+        display: flex;
+        width: 100%;
+        height: 60vh;
+        gap: 5px;
+        .Property-Image-main{
+            flex: 2;
+            border-radius: 20px 0 0 20px;
+            // width: 100%;
+            // height: 40vh;
+            object-fit: fill;
+        }
+        .Property-Image-side{
+            flex: 1;
+            // display: flex;
+            // flex-direction: column;
+            // flex-grow: 1;
+            // display: grid;
+            // grid-template-columns: repeat(2, 1fr);
+            // grid-gap: 5px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 5px;
+            height: 50vh;
+            img{
+                width: 100%;
+                // height: 50%;
+                height: 29.75vh;
+                // margin-bottom: 5px;
+                // width: 100%;
+                // height: 100%;
+                // border-radius: 20px;
+                object-fit: cover;
+            }
+            .last-t{
+                width: 100%;
+                // height: 100%;
+                border-radius: 0 20px 0 0;
+            }
+            .last-img{
+                width: 100%;
+                // height: 100%;
+                border-radius: 0 0 20px 0;
+            }
+        }
+    }
+    p{
+        
+        color: var(--black, #000);
+        font-family: DM Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .Property-Image-cont{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .Property-Image-cont-img{
+            display: flex;
+            width: 100%;
+            height: 40vh;
+            gap: 5px;
+            .Property-Image-main{
+                flex-grow:1 ;
+                // width: 25vw;
+                // height: 40vh;
+                max-width: 90vw;
+                border-radius: 20px;
+            }
+            .Property-Image-side{
+                display: none;
+            }
+        }
+    p{
+        color: var(--black, #000);
+font-family: DM Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+    }
+    }
+    
+    
+}

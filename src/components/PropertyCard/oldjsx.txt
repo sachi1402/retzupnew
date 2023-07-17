@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import './PropertyCard.css'
-const PropertyCard = (scrolled) => {
+const PropertyCard = () => {
   const [show, setshow] = useState(true);
   return (
-    <div className={scrolled?'P-card':'P-card2'}>
+    <div className='P-card'>
       <div className='P-card-top'>
-        
         <h3>Price</h3>
         <p>₹ 11,500   <span>Night</span></p>
       </div>

@@ -1,15 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './PropertyDiscription.css'
 import share from './../../assets/share.png'
 import mark from './../../assets/Mask group.png'
+import { FaShareSquare } from 'react-icons/fa';
+import { BsBookmark } from 'react-icons/bs';
+
 const PropertyDiscription = () => {
+    const [desctxt, setdesctxt] = useState("Everest Sherpa Resort welcomes you to your home away from home in comfort and luxury amidst the stunning natural beauty of the Khumbu Himalaya. Allow us to welcome and pamper you after a tiring trek with our friendly Sherpa hospitality with delicious home cooked local an intl. delicacies. At ESR we go one step further than just offering the best hospitality; we also make sure our resort complies with sustainable tourism practices.We offer 22 well apointed rooms");
+    const [showFullDescription, setShowFullDescription] = useState(false);
+
+
+    let desctxtshortent=(txt)=>{
+
+      const words = txt.split(' ');
+    const shortenedText = words.slice(0, 20).join(' ');
+
+    return shortenedText;
+  };
+
+  const handleShowMore = () => {
+    setShowFullDescription(e=>!e);
+    }
   return (
     <div className="Property-discription">
     <div className='Property-discription-title'>
       <h1>Jannat 100% Pet Friendly Pool villa with  Lake View</h1>
       <div>
-        <img src={share}/>|
-        <img src={mark}/>
+      <FaShareSquare color='black'/>| <BsBookmark color='black'/>
+        {/* <img src={mark}/> */}
         
       </div>
     </div>
@@ -24,13 +42,20 @@ const PropertyDiscription = () => {
 </g>
     </svg> Pimplad Nasik, Maharashtra, India
     </div>
-    <div className='Property-discription-disc'>Everest Sherpa Resort welcomes you to your home away from home in 
-comfort and luxury amidst the stunning natural beauty of the Khumbu 
-Himalaya. Allow us to welcome and pamper you after a tiring trek with 
-our friendly Sherpa hospitality with delicious home cooked local an intl. 
-delicacies. At ESR we go one step further than just offering the best 
-hospitality; we also make sure our resort complies with sustainable 
-tourism practices.We offer 22 well apointed rooms</div>
+    {/* <div className='Property-discription-disc'>{desctxtshortent("Everest Sherpa Resort welcomes you to your home away from home in comfort and luxury amidst the stunning natural beauty of the Khumbu Himalaya. Allow us to welcome and pamper you after a tiring trek with our friendly Sherpa hospitality with delicious home cooked local an intl. delicacies. At ESR we go one step further than just offering the best hospitality; we also make sure our resort complies with sustainable tourism practices.We offer 22 well apointed rooms")} */}
+    {/* </div> */}
+    {showFullDescription ? (
+        <div>
+          <p>{desctxt}</p>
+          <u onClick={handleShowMore}>Show less</u>
+        </div>
+      ) : (
+        <div>
+          <p>{desctxtshortent(desctxt)+"  ..."}</p>
+          <u onClick={handleShowMore}>Show more</u>
+        </div>
+      )}
+{/* <hr/> */}
   </div>
   )
 }

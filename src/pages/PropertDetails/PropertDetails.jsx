@@ -10,7 +10,7 @@ import PropertyAminityes from '../../components/PropertAminityes/PropertyAminity
 import PropertySleepDetails from '../../components/PropertySleep/propertySleepDetails'
 import PropertyThingtoKnow from '../../components/PropertyThingtoKnow/PropertyThingtoKnow'
 import PropertyHoastProfile from '../../components/PropertyHoastProfile/PropertyHoastProfile'
-import Nav from '../../components/Navbar2/Navbar'
+import Nav from '../../components/Navbar/Navbar'
 import { useNavigate, useParams } from 'react-router-dom'
 const PropertDetails = () => {
   const id = useParams();
@@ -55,28 +55,84 @@ const PropertDetails = () => {
 
     fetchListingData();
   }, []);
+
+
+  const [scrolled, setScrolled] = useState(false);
+  const [scrolled2, setScrolled2] = useState('0');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const scrollThreshold = windowHeight * 0.5;
+
+      if (scrollPosition > scrollThreshold) {
+        setScrolled(true);
+      }
+      setScrolled2(scrollPosition);
+      console.log(scrollPosition,scrollPosition > scrollThreshold);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+  const cardStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    width: '20vw',
+    height: '578px',
+    borderRadius: '16px',
+    border: '2px solid #e3e3e3',
+    background: '#fff',
+    boxShadow: '0px 4px 16px 0px rgba(172, 172, 172, 0.25)',
+    position: 'fixed',
+    top:'30%',
+    right: '10%',
+  };
+  const cardStyle2 = {
+    display: 'flex',
+    flexDirection: 'column',
+    width: '20vw',
+    height: '578px',
+    borderRadius: '16px',
+    border: '2px solid #e3e3e3',
+    background: '#fff',
+    boxShadow: '0px 4px 16px 0px rgba(172, 172, 172, 0.25)',
+    position: 'fixed',
+    top: '10%',
+    right: '10%',
+  };
+  
+
   return (
     <>
+    <div>
+    {/* {<PropertyCard  scrolled={scrolled}id={scrolled?'p-card':'p-card2'} class={scrolled?'P-card':'P-card2'} style={scrolled?{top:'30%'}:{top:'40%'}}/>} */}
     {/* <div style={{'height':'100px' ,'width':'100vw','background':'blue' }}>  </div> */}
-    <Nav/>
+    <Nav showanim={false}/>
     <div className="propertDetails">
     <div className="propertDetails-right">
         <div className="propertDetails-r-pageindex">
-          Home&nbsp; {">"} Category - Farms &nbsp; {'>'}&nbsp; <span>Property Details</span>
+          Home&nbsp; {">"} Category - Farms &nbsp; {'>'}&nbsp; <span>Property Details </span>
         </div>
         <PropertyImageCarasole />
         <PropertyDiscription/>
         <PropertyRating/>
+       
         <ProertyRatingCarasole/>
         <PropertyAminityes/>
         <PropertySleepDetails/>
         <PropertyThingtoKnow/>
-        <PropertyHoastProfile/>
+        {/* <PropertyHoastProfile/> */}
         <div className="map">
         <h4>Location</h4>
         <iframe
         title="Google Maps"
-        width="70%"
+        // width="70%"
         height="100%"
         frameBorder="0"
         style={{ border: 0 }}
@@ -85,8 +141,9 @@ const PropertDetails = () => {
       ></iframe>
         </div>
     </div>
-    <div className="propertDetails-left">
-      <PropertyCard id='p-card'/>
+    {/* <div className="propertDetails-left"> */}
+      {/* <PropertyCard id='p-card'/> */}
+    {/* </div> */}
     </div>
     </div>
     </>

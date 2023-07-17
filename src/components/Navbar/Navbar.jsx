@@ -90,7 +90,7 @@
 import React, { useEffect, useState } from 'react';
 import './navbar.scss'
 
-function Navbar({openfilters}) {
+function Navbar({openfilters,showanim}) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
